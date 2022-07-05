@@ -64,7 +64,7 @@ namespace controle_de_pedidos.WForm
                 switch (cbProcurar.SelectedIndex)
                 {
                     case 0:
-                        strWhere = (" WHERE p.ID=" + txtPesquisa.Text);
+                        strWhere = (" WHERE p.ProdCodigo=" + txtPesquisa.Text);
                         break;
                     case 1:
                         strWhere = (" WHERE p.ProdDescricao LIKE '%" + txtPesquisa.Text + "%'");
