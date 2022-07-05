@@ -72,7 +72,7 @@
             this.cboUnidade.MaxLength = 2;
             this.cboUnidade.Name = "cboUnidade";
             this.cboUnidade.Size = new System.Drawing.Size(64, 21);
-            this.cboUnidade.TabIndex = 27;
+            this.cboUnidade.TabIndex = 2;
             this.cboUnidade.Enter += new System.EventHandler(this.cboUnidade_Enter);
             this.cboUnidade.Leave += new System.EventHandler(this.cboUnidade_Leave);
             // 
@@ -83,7 +83,7 @@
             this.txtDescricao.Location = new System.Drawing.Point(88, 24);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(281, 21);
-            this.txtDescricao.TabIndex = 21;
+            this.txtDescricao.TabIndex = 1;
             this.txtDescricao.Enter += new System.EventHandler(this.txtNome_Enter);
             this.txtDescricao.Leave += new System.EventHandler(this.txtNome_Leave);
             // 
@@ -94,7 +94,7 @@
             this.txtValorVenda.Location = new System.Drawing.Point(130, 64);
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.Size = new System.Drawing.Size(100, 21);
-            this.txtValorVenda.TabIndex = 25;
+            this.txtValorVenda.TabIndex = 5;
             this.txtValorVenda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValorVenda.Enter += new System.EventHandler(this.txtValorVenda_Enter);
             this.txtValorVenda.Leave += new System.EventHandler(this.txtValorVenda_Leave);
@@ -106,7 +106,7 @@
             this.txtValorCompra.Location = new System.Drawing.Point(11, 64);
             this.txtValorCompra.Name = "txtValorCompra";
             this.txtValorCompra.Size = new System.Drawing.Size(113, 21);
-            this.txtValorCompra.TabIndex = 24;
+            this.txtValorCompra.TabIndex = 4;
             this.txtValorCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValorCompra.Enter += new System.EventHandler(this.txtValorCompra_Enter);
             this.txtValorCompra.Leave += new System.EventHandler(this.txtValorCompra_Leave);
@@ -117,7 +117,7 @@
             this.txtId.Location = new System.Drawing.Point(11, 24);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(71, 21);
-            this.txtId.TabIndex = 20;
+            this.txtId.TabIndex = 0;
             this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
@@ -172,7 +172,7 @@
             this.btnProximo.Location = new System.Drawing.Point(477, 122);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(30, 24);
-            this.btnProximo.TabIndex = 43;
+            this.btnProximo.TabIndex = 14;
             this.btnProximo.UseVisualStyleBackColor = true;
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
@@ -182,7 +182,7 @@
             this.btnAnterior.Location = new System.Drawing.Point(447, 122);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(30, 24);
-            this.btnAnterior.TabIndex = 42;
+            this.btnAnterior.TabIndex = 13;
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
@@ -192,7 +192,7 @@
             this.btnPrimeiro.Location = new System.Drawing.Point(417, 122);
             this.btnPrimeiro.Name = "btnPrimeiro";
             this.btnPrimeiro.Size = new System.Drawing.Size(30, 24);
-            this.btnPrimeiro.TabIndex = 41;
+            this.btnPrimeiro.TabIndex = 12;
             this.btnPrimeiro.UseVisualStyleBackColor = true;
             this.btnPrimeiro.Click += new System.EventHandler(this.btnPrimeiro_Click);
             // 
@@ -202,7 +202,7 @@
             this.btnultimo.Location = new System.Drawing.Point(507, 122);
             this.btnultimo.Name = "btnultimo";
             this.btnultimo.Size = new System.Drawing.Size(30, 24);
-            this.btnultimo.TabIndex = 40;
+            this.btnultimo.TabIndex = 15;
             this.btnultimo.UseVisualStyleBackColor = true;
             this.btnultimo.Click += new System.EventHandler(this.btnultimo_Click);
             // 
@@ -214,7 +214,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(213, 99);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(61, 48);
-            this.btnCancelar.TabIndex = 35;
+            this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -227,7 +227,7 @@
             this.btnFechar.Location = new System.Drawing.Point(543, 99);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(61, 48);
-            this.btnFechar.TabIndex = 39;
+            this.btnFechar.TabIndex = 16;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -240,7 +240,7 @@
             this.btnPesquisa.Location = new System.Drawing.Point(351, 99);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(61, 48);
-            this.btnPesquisa.TabIndex = 38;
+            this.btnPesquisa.TabIndex = 11;
             this.btnPesquisa.Text = "Pesquisar";
             this.btnPesquisa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisa.UseVisualStyleBackColor = true;
@@ -254,7 +254,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(146, 99);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(61, 48);
-            this.btnSalvar.TabIndex = 34;
+            this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Gravar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -268,7 +268,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(284, 99);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(61, 48);
-            this.btnExcluir.TabIndex = 36;
+            this.btnExcluir.TabIndex = 10;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -282,7 +282,7 @@
             this.btnEditar.Location = new System.Drawing.Point(79, 99);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(61, 48);
-            this.btnEditar.TabIndex = 32;
+            this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -295,7 +295,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(12, 99);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(61, 48);
-            this.btnAdicionar.TabIndex = 31;
+            this.btnAdicionar.TabIndex = 6;
             this.btnAdicionar.Text = "&Incluir";
             this.btnAdicionar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -311,7 +311,7 @@
             this.cboGProdutos.MaxLength = 2;
             this.cboGProdutos.Name = "cboGProdutos";
             this.cboGProdutos.Size = new System.Drawing.Size(156, 21);
-            this.cboGProdutos.TabIndex = 44;
+            this.cboGProdutos.TabIndex = 3;
             this.cboGProdutos.Enter += new System.EventHandler(this.cboGProdutos_Enter);
             this.cboGProdutos.Leave += new System.EventHandler(this.cboGProdutos_Leave);
             // 
