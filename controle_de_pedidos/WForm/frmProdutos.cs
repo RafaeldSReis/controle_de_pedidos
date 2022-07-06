@@ -102,33 +102,33 @@ namespace controle_de_pedidos.WForm
             {
                 if (string.IsNullOrEmpty(txtDescricao.Text))
                 {
-                    //errorProvider1.SetError(txtDescricao, "O nome deve ser preenchido");
+                    errorProvider1.SetError(txtDescricao, "O nome deve ser preenchido");
                 }
                 else
                 {
-                    //errorProvider1.SetError(txtDescricao, string.Empty);
+                    errorProvider1.SetError(txtDescricao, string.Empty);
                 }
 
                 if (string.IsNullOrEmpty(txtValorCompra.Text))
                 {
-                    //errorProvider1.SetError(txtValorCompra, "O valor da compra deve ser preenchido");
+                    errorProvider1.SetError(txtValorCompra, "O valor da compra deve ser preenchido");
                 }
                 else
                 {
-                   // errorProvider1.SetError(txtValorCompra, string.Empty);
+                    errorProvider1.SetError(txtValorCompra, string.Empty);
                 }
 
                 if (string.IsNullOrEmpty(txtValorVenda.Text))
                 {
-                    //errorProvider1.SetError(txtValorVenda, "O valor da venda deve ser preenchido");
+                    errorProvider1.SetError(txtValorVenda, "O valor da venda deve ser preenchido");
                 }
                 else
                 {
-                    //errorProvider1.SetError(txtValorVenda, string.Empty);
+                    errorProvider1.SetError(txtValorVenda, string.Empty);
                 }               
 
-               // if (errorProvider1.HasErrors(this))
-                  //  return;
+                if (errorProvider1.HasErrors(this))
+                    return;
 
                 produtos.prodDescricao = txtDescricao.Text;
                 produtos.prodValorCompra = double.Parse(txtValorCompra.Text);
@@ -156,33 +156,33 @@ namespace controle_de_pedidos.WForm
 
                 if (string.IsNullOrEmpty(txtDescricao.Text))
                 {
-                    //errorProvider1.SetError(txtDescricao, "A Descrição deve ser preenchido");
+                    errorProvider1.SetError(txtDescricao, "A Descrição deve ser preenchido");
                 }
                 else
                 {
-                   // errorProvider1.SetError(txtDescricao, string.Empty);
+                   errorProvider1.SetError(txtDescricao, string.Empty);
                 }
 
                 if (string.IsNullOrEmpty(txtValorCompra.Text))
                 {
-                   // errorProvider1.SetError(txtValorCompra, "O valor da compra deve ser preenchido");
+                   errorProvider1.SetError(txtValorCompra, "O valor da compra deve ser preenchido");
                 }
                 else
                 {
-                    //errorProvider1.SetError(txtValorCompra, string.Empty);
+                   errorProvider1.SetError(txtValorCompra, string.Empty);
                 }
 
                 if (string.IsNullOrEmpty(txtValorVenda.Text))
                 {
-                    //errorProvider1.SetError(txtValorVenda, "O valor da venda deve ser preenchido");
+                   errorProvider1.SetError(txtValorVenda, "O valor da venda deve ser preenchido");
                 }
                 else
                 {
-                    //errorProvider1.SetError(txtValorVenda, string.Empty);
+                   errorProvider1.SetError(txtValorVenda, string.Empty);
                 }
 
-               // if (errorProvider1.HasErrors(this))
-                //   return;
+                if (errorProvider1.HasErrors(this))
+                   return;
 
                 produtos.prodDescricao = txtDescricao.Text;
                 produtos.prodValorCompra = double.Parse(txtValorCompra.Text);
@@ -190,7 +190,7 @@ namespace controle_de_pedidos.WForm
                 produtos.prodUnidade = cboUnidade.Text;
                 produtos.ProdutosGrupos.GrupID = (cboGProdutos.SelectedItem as dynamic).GrupID;
                 produtos.ProdutosGrupos.GrupDescricao = cboGProdutos.Text;
-                produtosBLL.Salvar(produtos);
+                produtosBLL.Editar(produtos);
 
                 MessageBox.Show("O Produto foi editado com Sucesso!");
                 Registro(produtosBLL.Ultimo());
@@ -241,11 +241,13 @@ namespace controle_de_pedidos.WForm
 
         private void txtValorCompra_Enter(object sender, EventArgs e)
         {
+            
             txtValorCompra.BackColor = Color.Beige;
         }
 
         private void txtValorCompra_Leave(object sender, EventArgs e)
         {
+            
             txtValorCompra.BackColor = Color.White;
         }
 
@@ -319,12 +321,12 @@ namespace controle_de_pedidos.WForm
         {
             txtId.Text = produtos.ProdCodigo.ToString();
             txtDescricao.Text = produtos.prodDescricao;
-            txtValorCompra.Text = produtos.prodValorCompra.ToString();
-            txtValorVenda.Text = produtos.prodValorVenda.ToString();
+            txtValorCompra.Text = produtos.prodValorCompra.ToString("N2");
+            txtValorVenda.Text = produtos.prodValorVenda.ToString("N2");
             cboUnidade.Text = produtos.prodUnidade;
             cboGProdutos.Text = produtos.ProdutosGrupos.GrupDescricao.ToString();           
         }
-
+        //string a = String.Format("(0:f)")
         private void frmProdutos_Load(object sender, EventArgs e)
         {
             if (txtId.Text.Length > 0)
