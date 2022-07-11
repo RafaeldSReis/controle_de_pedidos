@@ -99,7 +99,7 @@ namespace controle_de_pedidos.WForm
 
         private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new frmPedidos().Show();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)

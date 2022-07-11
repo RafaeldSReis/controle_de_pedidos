@@ -326,7 +326,7 @@ namespace controle_de_pedidos.WForm
             cboUnidade.Text = produtos.prodUnidade;
             cboGProdutos.Text = produtos.ProdutosGrupos.GrupDescricao.ToString();           
         }
-        //string a = String.Format("(0:f)")
+        
         private void frmProdutos_Load(object sender, EventArgs e)
         {
             if (txtId.Text.Length > 0)

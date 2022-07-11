@@ -65,13 +65,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\ClientesBLL.cs" />
+    <Compile Include="BLL\PedidosBLL.cs" />
     <Compile Include="BLL\ProdutosBLL.cs" />
     <Compile Include="BLL\ProdutosGrupos.cs" />
     <Compile Include="DAL\ClientesDAL.cs" />
     <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\PedidosDAL.cs" />
     <Compile Include="DAL\ProdutosDAL.cs" />
     <Compile Include="DAL\ProdutosGrupos.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Pedidos.cs" />
     <Compile Include="Entidades\Produtos.cs" />
     <Compile Include="Entidades\ProdutosGrupos.cs" />
     <Compile Include="Program.cs" />
@@ -93,6 +96,12 @@
     </Compile>
     <Compile Include="WForm\frmCliePesquisa.Designer.cs">
       <DependentUpon>frmCliePesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WForm\frmPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WForm\frmPedidos.Designer.cs">
+      <DependentUpon>frmPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="WForm\frmProdPesquisa.cs">
       <SubType>Form</SubType>
@@ -125,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WForm\frmCliePesquisa.resx">
       <DependentUpon>frmCliePesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WForm\frmPedidos.resx">
+      <DependentUpon>frmPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WForm\frmProdPesquisa.resx">
       <DependentUpon>frmProdPesquisa.cs</DependentUpon>

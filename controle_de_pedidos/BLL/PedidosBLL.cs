@@ -11,15 +11,15 @@ using System.Data.SqlClient;
 
 namespace controle_de_pedidos.BLL
 {
-    public class ProdutosBLL
+    public class PedidosBLL
     {
-        ProdutosDAL produtosDAL = new ProdutosDAL();
+        PedidosDAL PedidosDAL = new PedidosDAL();
 
-        public void Salvar(Produtos produtos)
+        public void Salvar(Pedidos pedidos)
         {
             try
             {
-               produtosDAL.Salvar(produtos);
+                PedidosDAL.Salvar(pedidos);
             }
             catch (Exception ex)
             {
@@ -27,24 +27,11 @@ namespace controle_de_pedidos.BLL
             }
         }
 
-        public void Editar(Produtos produtos)
+        public void Editar(Pedidos pedidos)
         {
             try
             {
-                produtosDAL.Editar(produtos);
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show("ERRO" + ex.Message);
-            }
-        }
-
-        public void Excluir(Produtos produtos)
-        {
-            try
-            {
-                produtosDAL.Excluir(produtos);
+                PedidosDAL.Editar(pedidos);
             }
             catch (Exception ex)
             {
@@ -53,11 +40,24 @@ namespace controle_de_pedidos.BLL
             }
         }
 
-        public List<Produtos> CarregaGrid(string Where)
+        public void Excluir(Pedidos pedidos)
         {
             try
             {
-                return new ProdutosDAL().CarregaGrid(Where); ;
+                PedidosDAL.Excluir(pedidos);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("ERRO" + ex.Message);
+            }
+        }
+
+        public List<Pedidos> CarregaGrid(string Where)
+        {
+            try
+            {
+                return new PedidosDAL().CarregaGrid(Where); ;
             }
             catch (Exception ex)
             {
@@ -65,11 +65,12 @@ namespace controle_de_pedidos.BLL
             }
         }
 
-        public Produtos Pesquisar(int ID)
+        public Pedidos Pesquisar(int ID)
         {
             try
             {
-                return new ProdutosDAL().Pesquisar(ID);
+
+                return new PedidosDAL().Pesquisar(ID);
             }
             catch (Exception ex)
             {
@@ -81,7 +82,7 @@ namespace controle_de_pedidos.BLL
         {
             try
             {
-                return new ProdutosDAL().Primeiro();
+                return new PedidosDAL().Primeiro();
             }
             catch (SqlException)
             {
@@ -97,7 +98,7 @@ namespace controle_de_pedidos.BLL
         {
             try
             {
-                return new ProdutosDAL().Proximo(codigoAtual);
+                return new PedidosDAL().Proximo(codigoAtual);
             }
             catch (SqlException)
             {
@@ -113,7 +114,7 @@ namespace controle_de_pedidos.BLL
         {
             try
             {
-                return new ProdutosDAL().Anterior(codigoAtual);
+                return new PedidosDAL().Anterior(codigoAtual);
             }
             catch (SqlException)
             {
@@ -129,7 +130,7 @@ namespace controle_de_pedidos.BLL
         {
             try
             {
-                return new ProdutosDAL().Ultimo();
+                return new PedidosDAL().Ultimo();
             }
             catch (SqlException)
             {
@@ -140,6 +141,5 @@ namespace controle_de_pedidos.BLL
                 throw;
             }
         }
-
     }
 }

@@ -152,3 +152,4 @@ C:\Users\rafin\Desktop\controle_de_pedidos\controle_de_pedidos\obj\Debug\control
 C:\Users\rafin\Desktop\controle_de_pedidos\controle_de_pedidos\obj\Debug\controle_de_pedidos.csproj.CopyComplete
 C:\Users\rafin\Desktop\controle_de_pedidos\controle_de_pedidos\obj\Debug\controle_de_pedidos.exe
 C:\Users\rafin\Desktop\controle_de_pedidos\controle_de_pedidos\obj\Debug\controle_de_pedidos.pdb
+C:\Users\rafin\Desktop\controle_de_pedidos\controle_de_pedidos\obj\Debug\controle_de_pedidos.WForm.frmPedidos.resources
