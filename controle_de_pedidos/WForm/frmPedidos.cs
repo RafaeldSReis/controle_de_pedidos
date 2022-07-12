@@ -22,7 +22,7 @@ namespace controle_de_pedidos.WForm
         private void HabilitarCampos()
         {
             txtDescricao.Enabled = true;
-            txtId.Enabled = true;
+            txtId.Enabled = false;
             txtValorVenda.Enabled = true;
             txtClieID.Enabled = true;
             btnEditar.Enabled = false;
@@ -80,7 +80,7 @@ namespace controle_de_pedidos.WForm
             txtId.Text = pedidos.PediID.ToString();
             txtDescricao.Text = pedidos.PediObservacao;
             txtClieID.Text = pedidos.PediCliente.ToString();
-            txtValorVenda.Text = pedidos.PediValorTotal.ToString();
+            txtValorVenda.Text = pedidos.PediValorTotal.ToString("N2");
             txtdata.Text = pedidos.PediData.ToString("dd/MM/yyyy");
         }
 

@@ -97,6 +97,7 @@
             this.txtValorVenda.TabIndex = 5;
             this.txtValorVenda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValorVenda.Enter += new System.EventHandler(this.txtValorVenda_Enter);
+            this.txtValorVenda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorVenda_KeyPress);
             this.txtValorVenda.Leave += new System.EventHandler(this.txtValorVenda_Leave);
             // 
             // txtValorCompra
@@ -109,6 +110,7 @@
             this.txtValorCompra.TabIndex = 4;
             this.txtValorCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValorCompra.Enter += new System.EventHandler(this.txtValorCompra_Enter);
+            this.txtValorCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorCompra_KeyPress);
             this.txtValorCompra.Leave += new System.EventHandler(this.txtValorCompra_Leave);
             // 
             // txtId
